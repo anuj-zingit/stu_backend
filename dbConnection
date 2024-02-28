@@ -1,0 +1,11 @@
+const mongoose=require ('mongoose');
+const db_connection='mongodb://localhost:27017/student';
+mongoose.connect(db_connection).then(
+    function(db)
+    {
+        console.log("db-connected");
+    }
+).catch(function(err)
+{
+    console.log(err);
+})
